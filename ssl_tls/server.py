@@ -27,3 +27,5 @@ print("HTTPS Server started successfully")
 print("Open: https://localhost:4443")
 
 httpd.serve_forever()
+
+##openssl req -x509 -newkey rsa:2048 -keyout server.key -out server.crt -days 365 -nodes -subj "/CN=localhost"
